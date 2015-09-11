@@ -12,7 +12,7 @@ footer
 {
    background: #22BCE0;
    text-align: center;
-   color: white;
+   color: rgba(255, 255, 255, 0.7);
    padding: 1em;
 }
 footer p:first-child
