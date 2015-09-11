@@ -8,6 +8,29 @@ body
   font-family: Arial;
   font-size: 16px;
 }
+footer
+{
+   background: #22BCE0;
+   text-align: center;
+   color: white;
+   padding: 1em;
+}
+footer p:first-child
+{
+  margin-bottom: 0;
+}
+footer p:last-child
+{
+  margin-top: 0;
+}
+footer p:last-child:after
+{
+  content: " -";
+}
+footer p:last-child:before
+{
+  content: "- ";
+}
 header
 {
   background: #343B54;
@@ -44,4 +67,49 @@ header #avatar
   position: absolute;
   right: 0;
   top: 0;
+}
+nav
+{
+  background:#80BCA3;
+  margin: 0;
+  padding: 0 0.5em;
+  position: relative;
+}
+nav ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul #publicar_nav
+{
+  position: absolute;
+  top: -0.3em;
+  right: 0;
+}
+nav ul #publicar_nav a
+{
+  background: #22BCE0;
+  border-radius: 5px;
+  padding: 0.7em 0.4em;
+  text-decoration: none;
+  font-style: italic;
+  font-style: oblique;
+  text-shadow:rgba(0, 0, 0, 0.5)
+  2px 2px 5px;
+  box-shadow:rgba(0, 0, 0, 0.5)
+  2px 2px 20px;
+}
+nav ul li
+{
+  display: inline-block;
+  margin: 0 1em 0 0;
+}
+nav ul li a
+{
+  display: block;
+  color: white;
+  padding: 0.5em 0;
+  text-decoration: none;
+
 }
