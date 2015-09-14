@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'puls4';
-	src:url('/home/luisauceda93/Documentos/Diseno-Web/fonts/puls4.eot?c7vv5j');
-	src:url('/home/luisauceda93/Documentos/Diseno-Web/fonts/puls4.eot?#iefixc7vv5j') format('embedded-opentype'),
-		url('/home/luisauceda93/Documentos/Diseno-Web/fonts/puls4.ttf?c7vv5j') format('truetype'),
-		url('/home/luisauceda93/Documentos/Diseno-Web/fonts/puls4.woff?c7vv5j') format('woff'),
-		url('/home/luisauceda93/Documentos/Diseno-Web/fonts/puls4.svg?c7vv5j#puls4') format('svg');
+	src:url('fonts/puls4.eot?c7vv5j');
+	src:url('fonts/puls4.eot?#iefixc7vv5j') format('embedded-opentype'),
+		url('fonts/puls4.ttf?c7vv5j') format('truetype'),
+		url('fonts/puls4.woff?c7vv5j') format('woff'),
+		url('fonts/puls4.svg?c7vv5j#puls4') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
