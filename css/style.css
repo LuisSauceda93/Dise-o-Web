@@ -25,15 +25,22 @@
 
 .icon-pencil:before {
 	content: "\f058";
+	margin-right: 0.7em;
 }
 .icon-star:before {
 	content: "\f02a";
+	color: #FFBE2C;
+	margin-right: 0.3em;
+	position: relative;
+	top: 0.2em;
 }
 .icon-triangle-down:before {
 	content: "\f05b";
+	color: #DD4F24;
 }
 .icon-triangle-up:before {
 	content: "\f0aa";
+	color: #05ff00;
 }
 a
 {
@@ -109,7 +116,7 @@ nav
 {
   background:#80BCA3;
   margin: 0;
-  padding: 0 0.5em;
+  padding: 0px 6em 0 0;
   position: relative;
 }
 nav ul
@@ -215,6 +222,10 @@ nav ul li a
   padding: 0.2em 0.5em;
   top: 100%;
   width: 90%;
+}
+#contenido .item .votacion a
+{
+	text-decoration: none;
 }
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item
