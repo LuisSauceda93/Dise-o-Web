@@ -40,7 +40,7 @@
 }
 .icon-triangle-up:before {
 	content: "\f0aa";
-	color: #05ff00;
+	color: #07de02;
 }
 a
 {
@@ -157,78 +157,115 @@ nav ul li a
   text-decoration: none;
 
 }
-#contenido
+aside
 {
-  margin: 1em;
+	display: none;
 }
-#contenido .item
-{
-  background: white;
-  border-bottom: 3px solid #22BCE0;
-  margin-bottom: 3em;
-  min-height: 128px;
-  position: relative;
-}
-#contenido .item .autor_item
-{
-  color: #AAA;
-}
+ #contenido
+ {
+ margin: 1em;
+ }
+ #contenido .item
+ {
+ background: white;
+ border-bottom: 3px solid #22BCE0;
+margin-bottom: 3em;
+ min-height: 128px;
+ position: relative;
+ }
+ #contenido .item .autor_item
+ {
+ color: #AAA;
+ }
 #contenido .item .datos_item
-{
-  margin: 1em 1em 0 0;
-  text-align: right;
+ {
+ margin: 1em 1em 0 0;
+ text-align: right;
+ }
+ #contenido .item .datos_item .fecha_item
+ {
+color: #AAA;
+ }
+ #contenido .item .datos_item .tag_item
+ {
+ background: #F4502A;
+ color: white;
+ float: left;
+ display:
+inline-block;
+ padding: 0.2em 0.5em;
+ border-radius: 0.5em;
+ text-decoration: none;
+ }
+ #contenido .item .imagen_item
+ {
+float: left;
+ margin: 0.1em 0 0;
+ }
+ #contenido .item .imagen_item img
+ {
+ width: 96px;
+ }
+ #contenido .item .titulo_item
+ {
+font-size: 1em;
+ font-style: italic;
+ }
+ #contenido .item .titulo_item a
+ {
+ color: #444;
+ text-decoration: none;
+ padding:
+1em 1em 0 0;
+ }
+ #contenido .item .votacion
+ {
+ position: absolute;
+ background: white;
+ border-radius: 0 0 0.5em 0.5em;
+left: 5%;
+ margin-top: 3px;
+ padding: 0.2em 0.5em;
+ top: 100%;
+ width: 90%;
+ }
+ #contenido .item .votacion a
+ {
+text-decoration: none;
+ }
+ #contenido .item .votacion .comentarios_item,
+ #contenido .item .votacion .guardar_item
+ {
+float: right;
+ }
+
+@media screen and (min-width:800px) {
+
+	#contenido
+	{
+		overflow: hidden;
+	}
+	#contenido .item
+	{
+		width: 49%;
+		float: left;
+	}
+	#contenido .item:nth-child(odd)
+	{
+		margin-right: 2%;
+	}
 }
-#contenido .item .datos_item .fecha_item
-{
-  color: #AAA;
-}
-#contenido .item .datos_item .tag_item
-{
-  background: #F4502A;
-  color: white;
-  float: left;
-  display: inline-block;
-  padding: 0.2em 0.5em;
-  border-radius: 0.5em;
-  text-decoration: none;
-}
-#contenido .item .imagen_item
-{
-  float: left;
-  margin: 0.1em 0 0;
-}
-#contenido .item .imagen_item img
-{
-  width: 96px;
-}
-#contenido .item .titulo_item
-{
-  font-size: 1em;
-  font-style: italic;
-}
-#contenido .item .titulo_item a
-{
-  color: #444;
-  text-decoration: none;
-  padding: 1em 1em 0 0;
-}
-#contenido .item .votacion
-{
-  position: absolute;
-  background: white;
-  border-radius: 0 0 0.5em 0.5em;
-  left: 5%;
-  margin-top: 3px;
-  padding: 0.2em 0.5em;
-  top: 100%;
-  width: 90%;
-}
-#contenido .item .votacion a
-{
-	text-decoration: none;
-}
-#contenido .item .votacion .comentarios_item,
-#contenido .item .votacion .guardar_item
-{
-  float: right;
+@media screen and (min-width: 1000px) {
+	aside
+	{
+		display: block;
+		float: right;
+		margin: 1em;
+		width: 20%;
+	}
+	aside video
+	{
+		width: 100%;
+	}
+
 }
