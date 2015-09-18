@@ -93,12 +93,21 @@ header h1
   font-weight: normal;
   margin: 0.2em 70px 0 0;
 }
+header #logo
+{
+	border-right: 1px solid white;
+  margin-right: 0.5em;
+}
 header #logo img
 {
-  border-right: 1px solid white;
   margin-right: 0.5em;
   padding-right: 0.5em;
   width: 52px;
+  transition: 0.5s;
+}
+header #logo img:hover
+{
+	transform: rotate(360deg);
 }
 header #avatar img
 {
@@ -135,7 +144,7 @@ nav ul #publicar_nav a
 {
   background: #22BCE0;
   border-radius: 5px;
-  padding: 0.7em 0.4em;
+  padding: 0.7em 0.4em 0.7em 2em;
   text-decoration: none;
   font-style: italic;
   font-style: oblique;
@@ -143,6 +152,17 @@ nav ul #publicar_nav a
   2px 2px 5px;
   box-shadow:rgba(0, 0, 0, 0.5)
   2px 2px 20px;
+}
+nav ul #publicar_nav a:before
+{
+	position: absolute;
+	left: 0.5em;
+	top: 0.5em;
+}
+nav ul #publicar_nav a:hover:before
+{
+	font-size: 18.5px;
+	transition: 0.3s;
 }
 nav ul li
 {
@@ -153,9 +173,14 @@ nav ul li a
 {
   display: block;
   color: white;
-  padding: 0.5em 0;
+  padding: 0.5em;
   text-decoration: none;
-
+	transition: 0.3s;
+}
+nav ul li a:hover
+{
+	background: #F4502A;
+	border-radius: 0.2em;
 }
 aside
 {
@@ -192,11 +217,16 @@ color: #AAA;
  color: white;
  float: left;
  display:
-inline-block;
+ inline-block;
  padding: 0.2em 0.5em;
  border-radius: 0.5em;
  text-decoration: none;
  }
+#contenido .item .datos_item .tag_item:hover
+{
+	background: #343B54;
+	transition: .3s;
+}
  #contenido .item .imagen_item
  {
 float: left;
@@ -239,7 +269,7 @@ text-decoration: none;
 float: right;
  }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: 800px) {
 
 	#contenido
 	{
@@ -267,5 +297,4 @@ float: right;
 	{
 		width: 100%;
 	}
-
 }
