@@ -103,11 +103,13 @@ header #logo img
   margin-right: 0.5em;
   padding-right: 0.5em;
   width: 52px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 header #logo img:hover
 {
-	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	        transform: rotate(360deg);
 }
 header #avatar img
 {
@@ -162,6 +164,7 @@ nav ul #publicar_nav a:before
 nav ul #publicar_nav a:hover:before
 {
 	font-size: 18.5px;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 nav ul li
@@ -175,6 +178,7 @@ nav ul li a
   color: white;
   padding: 0.5em;
   text-decoration: none;
+	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
 nav ul li a:hover
@@ -225,6 +229,7 @@ color: #AAA;
 #contenido .item .datos_item .tag_item:hover
 {
 	background: #343B54;
+	-webkit-transition: .3s;
 	transition: .3s;
 }
  #contenido .item .imagen_item
